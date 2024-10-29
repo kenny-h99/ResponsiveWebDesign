@@ -1,11 +1,40 @@
 
 body{
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    padding: 20px;
 } 
 
 /* center all specified elements */
 h1, h2, p{
     text-align: center; 
+}
+
+/* the second font is a FALLBACK font which means if the original isn't available
+then the ladder will be used */
+h1, h2{
+    font-family: Impact, serif;
+    
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+hr{
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+
+.established{
+    font-style: italic;
 }
 
 /* (#) signifies an id selector */
@@ -19,9 +48,15 @@ h1, h2, p{
   /* margin is the space around the image */
   margin-left: auto;
   margin-right: auto;
+
+  /* padding is spacing on the edges of a border */
+  padding: 20px;
+
+  /* this ensure the max width will not exceed 500 px */
+  max-width: 500px;
 }
 
-.flavor{
+.flavor , .dessert{
     text-align: left;
     width: 75%;
 }
@@ -34,4 +69,50 @@ h1, h2, p{
 /* using the class and element selects all p that are within the .item class */
 .item p{
     display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.bottom-line{
+    margin-top: 25px;
+}
+
+/* FOOTER */
+
+footer{
+    font-size: 14px;
+    
+}
+
+/* this ensure the link will be black */
+a{
+    color: black;
+}
+
+/* this ensures that when the link has been visited then it turns to grey */
+a:visited{
+    color: black;
+}
+
+/* this allows the item being hovered over to become brown  */
+a:hover{
+    color: brown;
+}
+
+/* when the item is being clicked we use the ACTIVE pseudo selector */
+a:active{
+    color: brown;
+}
+
+.address{
+    margin-bottom: 5px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* you can use a negative value to go the opposite direction for a margin */
+    margin-top: -25px;
 }
