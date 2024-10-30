@@ -9,5 +9,7 @@ body{
 label{
     /* think of blocks stacking on top of one another */
     display: block;
+
+    /* top | right | bottom | left */
     margin: 0.5rem 0;
 }
