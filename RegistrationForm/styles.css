@@ -1,4 +1,4 @@
-body{
+body {
     width: 100%;
     height: 100vh;
     margin: 0;
@@ -6,7 +6,19 @@ body{
     color: #f5f6f7;
     font-family: Tahoma;
     font-size: 16px;
-}
+  }
+  
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
 
 label{
     /* think of blocks stacking on top of one another */
@@ -14,4 +26,40 @@ label{
 
     /* top | right | bottom | left */
     margin: 0.5rem 0;
+}
+
+fieldset{
+    border: 0px;
+    padding: 2rem 0 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+
+/* highlights the last element being used */
+fieldset:last-of-type{
+    border-bottom: none;
+}
+
+input, textarea, select{
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.inline{
+    width: unset;  
+    margin: 0 0.5em 0 0;
+
+    /* moves the radio buttons down to the middle they were too high */
+    vertical-align: middle;
+}
+
+input, textarea{
+    background-color: #0a0a23;
+
+    /* thickness | boldness | color */
+    border: 1px solid #0a0a23;
+
+    color: #ffffff;
+
+    min-height: 2em;
 }
