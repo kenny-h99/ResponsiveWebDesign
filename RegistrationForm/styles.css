@@ -43,6 +43,7 @@ fieldset:last-of-type{
 input, textarea, select{
     width: 100%;
     margin: 10px 0 0 0;
+    min-height: 2em;
 }
 
 .inline{
@@ -60,6 +61,19 @@ input, textarea{
     border: 1px solid #0a0a23;
 
     color: #ffffff;
+}
 
-    min-height: 2em;
+
+/* known as an attribute selector */
+input[type="submit"]
+{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    max-width: 300px;
+    
 }
